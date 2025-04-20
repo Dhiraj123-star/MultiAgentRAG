@@ -1,29 +1,58 @@
-Multi-Agent RAG with Astra DB & OpenAI Embeddings
-This project integrates Astra DB with LangChain and OpenAI embeddings to implement a Retrieval-Augmented Generation (RAG) system.
+🚀 Multi-Agent RAG with Astra DB, LangChain & OpenAI
+This application brings together powerful AI tools to help users find the most accurate and relevant answers—no matter what they ask. Whether you want historical facts, current news, or deep insights on AI topics, this system figures out the best source and delivers the right information fast.
 
-Functionality
-Document Loading: Fetches web documents from provided URLs.
+🔍 What Can This Do for You?
+🧠 Ask Anything, Get the Right Answer
+Automatically understands what you’re asking and chooses the best source:
 
-Text Splitting: Breaks documents into smaller chunks for efficient processing.
+Google Search for the latest or real-time info
 
-Embeddings Generation: Uses OpenAI to generate embeddings for the document chunks.
+Wikipedia for historical or general knowledge
 
-Vector Store Integration: Stores the generated embeddings in Astra DB for efficient retrieval.
+RAG from Vector Store for in-depth technical topics using preloaded documents
 
-Search Functionality: Enables searching of stored embeddings to retrieve relevant information.
+📄 Smart Document Processing
+Fetches web content from reliable sources
 
-Key Features
-Efficient web scraping and document loading.
+Breaks it into manageable chunks for smarter processing
 
-Seamless integration with Astra DB to store and retrieve embeddings.
+Transforms content into vector embeddings using OpenAI
 
-Leverages OpenAI's embeddings for advanced search capabilities.
+🚀 Powered by LangChain Agents
+Routes your question to the right "agent" based on your intent
 
-Supports RAG-style question answering by retrieving relevant chunks of text from stored embeddings.
+Modular agents handle Wikipedia, Google Search, and Vector-based document retrieval
 
-Setup & Usage
-Set up the environment: Ensure the necessary API keys and credentials are configured.
+Works behind the scenes with a powerful decision-making graph
 
-Run the script: Execute the script to load documents, generate embeddings, and store them in Astra DB.
+📦 Connected with Astra DB
+All processed information is stored in a high-performance vector database
 
-Search capability: Query the vector store to retrieve relevant information based on the embeddings.
+Quick access to relevant answers based on semantic meaning, not just keywords
+
+🌐 Accessible via a FastAPI Server
+Simple web API you can plug into any app or front end
+
+Clean responses and routing logic with a welcoming start screen
+
+Always gives you the best path to an answer—automatically
+
+🐳 Dockerized for Portability
+Easily deployable with Docker
+
+Run it anywhere with minimal setup
+
+🔁 Automated CI/CD
+GitHub Actions ensure that every update builds and deploys cleanly to DockerHub
+
+No manual steps needed—just push and deploy
+
+💡 Use It If You Want To:
+Build smart Q&A bots that think before answering
+
+Integrate powerful search into your product
+
+Combine public knowledge with your own documents for custom search
+
+Give your users instant access to both the past and the present
+
