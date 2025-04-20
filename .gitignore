@@ -1,5 +1,28 @@
-# Ignore the virtual environment folder
-venv/
+# Include everything from .gitignore
+# You can simply copy-paste all entries from .gitignore below
 
-# Ignore environment variable file
+# Common Python ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# Environment and build
+venv/
 .env
+*.egg-info/
+build/
+dist/
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and test caches
+*.log
+*.pytest_cache/
+*.coverage
+htmlcov/
+.ipynb_checkpoints/
