@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  multiagentrag:
+    image: dhiraj918106/multiagentrag:latest
+    container_name: multiagentrag
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ASTRA_DB_APPLICATION_TOKEN=${ASTRA_DB_APPLICATION_TOKEN}
+      - ASTRA_DB_ID=${ASTRA_DB_ID}
+      - SERP_API_KEY=${SERP_API_KEY}
+    volumes:
+      - .:/app
+    restart: always
+    networks:
+      - multiagent-network
+
+networks:
+  multiagent-network:
+    driver: bridge
